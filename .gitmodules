@@ -27,4 +27,5 @@
 	branch = release/v8.2
 [submodule "keyboards/beekeeb/dasbob"]
 	path = keyboards/beekeeb/dasbob
-	url = https://github.com/GroooveBob/DASBOB-qmk.git
+  url = https://github.com/beekeeb/miryoku_qmk_dasbob.git
+  branch = miryoku
