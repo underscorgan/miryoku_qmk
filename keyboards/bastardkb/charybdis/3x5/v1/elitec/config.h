@@ -37,3 +37,6 @@
 
 /* PMW3360 settings. */
 #define POINTING_DEVICE_CS_PIN B0
+
+
+#define LAYER_STATE_16BIT
