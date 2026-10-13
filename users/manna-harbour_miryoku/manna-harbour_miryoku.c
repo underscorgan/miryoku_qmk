@@ -74,7 +74,20 @@ const uint16_t PROGMEM thumbcombos_sym[] = {KC_UNDS, KC_LPRN, COMBO_END};
 const uint16_t PROGMEM thumbcombos_sym[] = {KC_RPRN, KC_UNDS, COMBO_END};
   #endif
 const uint16_t PROGMEM thumbcombos_fun[] = {KC_SPC, KC_TAB, COMBO_END};
-combo_t key_combos[COMBO_COUNT] = {
+#endif
+
+
+// charybdis pointer combos
+
+#if defined (KEYBOARD_bastardkb_charybdis)
+const uint16_t PROGMEM charybdis_dragscroll[] = {LT(U_BUTTON, KC_Z), ALGR_T(KC_X), COMBO_END};
+const uint16_t PROGMEM charybdis_sniping[] = {LT(U_BUTTON, KC_Z), KC_C, COMBO_END};
+#endif
+
+
+#if defined (COMBO_ENABLE)
+combo_t key_combos[] = {
+  #if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
   COMBO(thumbcombos_base_right, LT(U_FUN, KC_DEL)),
   COMBO(thumbcombos_base_left, LT(U_MEDIA, KC_ESC)),
   COMBO(thumbcombos_nav, KC_DEL),
@@ -86,6 +99,12 @@ combo_t key_combos[COMBO_COUNT] = {
   #else
   COMBO(thumbcombos_sym, KC_LPRN),
   #endif
-  COMBO(thumbcombos_fun, KC_APP)
+  COMBO(thumbcombos_fun, KC_APP),
+  #endif
+  #if defined (KEYBOARD_bastardkb_charybdis)
+  COMBO(charybdis_dragscroll, DRGSCRL),
+  COMBO(charybdis_sniping, SNIPING),
+  #endif
 };
+uint16_t COMBO_LEN = sizeof(key_combos) / sizeof(key_combos[0]);
 #endif
