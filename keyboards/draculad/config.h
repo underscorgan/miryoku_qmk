@@ -45,13 +45,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define EE_HANDS
 
 #define LAYER_STATE_8BIT
-
-#define POINTING_DEVICE_ROTATION_90
-
-//comment that out if your trackball is on the left side
-#define TRACKBALL_RIGHT
-
-#ifdef TRACKBALL_RIGHT 
-    #define POINTING_DEVICE_INVERT_X
-    #define POINTING_DEVICE_INVERT_Y
-#endif

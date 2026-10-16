@@ -22,3 +22,9 @@ K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
                     XXX,      XXX, \
           K32, K33, K34,      K35, K36, K37 \
 )
+
+#define SPLIT_POINTING_ENABLE
+#define POINTING_DEVICE_RIGHT
+#define POINTING_DEVICE_ROTATION_90
+#define POINTING_DEVICE_INVERT_X
+#define POINTING_DEVICE_INVERT_Y
