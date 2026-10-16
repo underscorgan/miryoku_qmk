@@ -20,8 +20,12 @@ K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
 K10, K11, K12, K13, K14,      K15, K16, K17, K18, K19, \
 K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
                     XXX,      XXX, \
-          K32, K33, K34,      K35, K36, K37 \
+          K32, K33, K34,      XXX, K35, K36 \
 )
+
+// The trackball replaces the innermost right thumb switch, so the right thumbs
+// shift outward and K37 is reached through the MIRYOKU_KLUDGE_THUMBCOMBOS combo,
+// as on the Charybdis Nano.
 
 #define SPLIT_POINTING_ENABLE
 #define POINTING_DEVICE_RIGHT
